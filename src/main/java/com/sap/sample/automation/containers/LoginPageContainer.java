@@ -9,12 +9,12 @@ public class LoginPageContainer {
 	@FindBy(how = How.NAME, using = "loginform")
 	public WebElement loginForm;
 
-	@FindBy(how = How.NAME, using = "login")
+	@FindBy(how = How.ID, using = "login1")
 	public WebElement usernameInput;
 
-	@FindBy(how = How.NAME, using = "passwd")
+	@FindBy(how = How.ID, using = "password")
 	public WebElement passwordInput;
 
-	@FindBy(how = How.XPATH, using = "/html/body/table[2]/tbody/tr[11]/td[2]/input")
+	@FindBy(how = How.NAME, using = "proceed")
 	public WebElement submitButton;
 }

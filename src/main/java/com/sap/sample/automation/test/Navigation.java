@@ -12,6 +12,7 @@ public class Navigation {
 	 * Given I navigate to the mock application.
 	 */
 	public void given_I_navigate_to_the_mock_application() {
+		//BrowserDriver.loadPage("https://mail.rediff.com/cgi-bin/login.cgi");
 		BrowserDriver.loadPage("http://localhost:8080/services/v1/checkConnection?urlToCheck=https://mail.rediff.com/cgi-bin/login.cgi");
 		LoginView.isDisplayedCheck();
 	}
